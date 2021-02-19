@@ -1,0 +1,84 @@
+:root{
+    --blanco: #FFFFFF;
+    --oscuro: #000000;
+    --primario: #1292ED;
+    --secundario: #4c5495;
+    --gris: #757575;
+
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+body{
+    font-size: 16px; /* 1rem = 10px*/
+}
+.titulo {
+    text-align: center;
+    color: var(--primario);
+    font-size: 4rem;
+}
+
+.titulo span{
+    font-size: 2rem;
+}
+
+.contenedor{
+    /*padding-top: 1rem;*/
+    /*border-radius: 2rem;*/
+    max-width: 100rem;
+    margin: 0 auto;/*top right bottom left*/
+
+    
+}
+
+.navegacion-principal{
+    /*padding: 1rem;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bg{
+    /* margin: 0 auto;
+    width: 50rem;
+    border-radius: 2rem; */
+    background-color: var(--secundario);
+    
+}
+.navegacion-principal a{
+   padding: 0.75rem;
+   color: var(--blanco);
+   text-decoration: none;
+   font-weight: normal;   
+}
+.navegacion-principal a:hover{
+    background-color:  #5f69b8;
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 2rem;   
+ }
+
+ @media (min-width: 768px){/*min: si pasa por arriba de ese valor, se ejecuta el media*/
+     .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }    
+ }
+
+ .hero{
+     /*background-image: url(../img/WEB.jpg);*/
+     background-color: var(--secundario);
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 300px;
+ }
